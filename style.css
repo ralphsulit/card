@@ -1,0 +1,142 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Lexend Deca', sans-serif;
+  font-weight: 400;
+  font-size: 15px;
+  height: 100vh;
+  color:  hsl(0, 0%, 100%, 0.75);
+  background-color: #a9a9a9;
+  display: grid;
+  place-items: center center;
+}
+
+/*******************************
+COLORS
+*******************************/
+.bright-orange {
+  color: hsl(31, 77%, 52%);
+}
+
+.dark-cyan {
+  color: hsl(184, 100%, 22%);
+}
+
+.dark-cyan2 {
+  color: hsl(179, 100%, 13%);
+}
+
+.white {
+  color: hsla(0, 0%, 100%, 0.75);
+}
+
+.light-gray {
+  color: hsl(0, 0%, 95%);
+}
+
+/*******************************
+CARDS
+*******************************/
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.cards {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding: 20px;
+}
+
+.card {
+  border-radius: 5px;
+  width: 300px;
+  height: 425px;
+}
+
+/* sedan */
+.card1 {
+  display:grid;
+  background-color:hsl(31, 77%, 52%);
+  justify-content: center;
+  padding: 50px 50px;
+}
+
+/* suv */
+.card2 {
+  display:grid;
+  background-color: hsl(184, 100%, 22%);
+  justify-content: center;
+  padding: 50px 50px;
+}
+
+/* luxury */
+.card3 {
+  display:grid;
+  background-color:hsl(179, 100%, 13%);
+  justify-content: center;
+  padding: 50px 50px;
+}
+
+
+.title {
+  font-family: 'Big Shoulders Display', cursive;
+  font-size: 2.5em;
+  font-weight: 700;
+  color: hsl(0, 0%, 95%);
+  padding: 25px 0;
+  text-transform: uppercase;
+}
+
+a {
+  padding-top: 25px;
+}
+
+p {
+  line-height: 1.6;
+}
+
+/* Button and hover effects */
+button {
+  font-weight: 700;
+  padding: 16px 30px;
+  background-color: hsl(0, 0%, 95%);
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+}
+
+.card1 a button:hover {
+  background-color: hsl(31, 77%, 52%);
+  border: 2px solid hsl(0, 0%, 95%);
+  color: hsl(0, 0%, 95%);
+}
+
+.card2 a button:hover {
+  background-color: hsl(184, 100%, 22%);
+  border: 2px solid hsl(0, 0%, 95%);
+  color: hsl(0, 0%, 95%);
+}
+
+.card3 a button:hover {
+  background-color: hsl(179, 100%, 13%);
+  border: 2px solid hsl(0, 0%, 95%);
+  color: hsl(0, 0%, 95%);
+}
+/*******************************
+Media Query
+*******************************/
+
+/* Desktop */
+@media screen and (min-width: 1440px) {
+  .cards {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+  }
+}
